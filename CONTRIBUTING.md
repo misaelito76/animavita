@@ -53,6 +53,8 @@ Alternatively you can setup your own mongo database without docker. Then, from t
 $ cp apps/backend/.env.example apps/backend/.env
 ```
 
+To use the geolocation service when running the mobile app on the web version, you need to have an API key from Opencage. You can obtain an API key for free by registering on their website, and there is no need to register a payment method for this. After obtaining the API key, add it to the `OPENCAGE_KEY` environment variable.
+
 Then, run the app:
 
 ```sh

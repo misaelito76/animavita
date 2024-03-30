@@ -75,6 +75,9 @@ importers:
       '@faker-js/faker':
         specifier: ^8.0.2
         version: 8.1.0
+      '@nestjs/axios':
+        specifier: ^3.0.2
+        version: 3.0.2(@nestjs/common@9.1.6)(axios@1.2.0-alpha.1)(rxjs@7.5.7)
       '@nestjs/cli':
         specifier: ^9.0.0
         version: 9.1.4
@@ -108,6 +111,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.0.0
         version: 5.41.0(eslint@8.26.0)(typescript@4.8.4)
+      axios:
+        specifier: 1.2.0-alpha.1
+        version: 1.2.0-alpha.1
       eslint:
         specifier: ^8.0.1
         version: 8.26.0
@@ -4217,6 +4223,18 @@ packages:
       - supports-color
     dev: false
 
+  /@nestjs/axios@3.0.2(@nestjs/common@9.1.6)(axios@1.2.0-alpha.1)(rxjs@7.5.7):
+    resolution: {integrity: sha512-Z6GuOUdNQjP7FX+OuV2Ybyamse+/e0BFdTWBX5JxpBDKA+YkdLynDgG6HTF04zy6e9zPa19UX0WA2VDoehwhXQ==}
+    peerDependencies:
+      '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
+      axios: ^1.3.1
+      rxjs: ^6.0.0 || ^7.0.0
+    dependencies:
+      '@nestjs/common': 9.1.6(class-transformer@0.5.1)(reflect-metadata@0.1.13)(rxjs@7.5.7)
+      axios: 1.2.0-alpha.1
+      rxjs: 7.5.7
+    dev: true
+
   /@nestjs/cli@9.1.4:
     resolution: {integrity: sha512-cvN4DcLzaqFzKRmpU3tOeLmw7+1p4XXsFLyWgteId0Szf6cAk5KJpD5jl2Kw7f39vNw9Pss8yiJ1q1CD/fcbwQ==}
     engines: {node: '>= 12.9.0'}
@@ -7326,7 +7344,6 @@ packages:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
-    dev: false
 
   /babel-core@7.0.0-bridge.0(@babel/core@7.23.2):
     resolution: {integrity: sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==}
